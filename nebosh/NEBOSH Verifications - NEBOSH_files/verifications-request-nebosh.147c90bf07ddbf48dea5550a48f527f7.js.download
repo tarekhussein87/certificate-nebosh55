@@ -1,0 +1,54 @@
+var Nebosh = Nebosh || {};
+
+$(document).ready(function(){
+
+    Nebosh.VerificationsRequest = {
+
+        debug : true,
+
+        $dateOfAchievement : null,
+		
+		init : function (){
+			this.$dateOfAchievement = $('input[name*="date_of_achievement"]');
+			this.handleDateOfAchievementField();
+        },
+        
+        handleDateOfAchievementField : function() {
+            if (this.$dateOfAchievement.length > 0) {
+                this.$dateOfAchievement.attr('autocomplete', 'off');
+                this.$dateOfAchievement.addClass('form-control');
+                this.$dateOfAchievement.daterangepicker({
+					autoUpdateInput: false,
+					singleDatePicker : true,
+					showDropdowns: true,
+					calender_style : "picker_3",
+					timePicker : false,
+					"minDate": moment().subtract(100, 'years'),
+					"maxDate": moment(),
+					locale : {
+						daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+						monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+						firstDay: 1,
+						format: 'DD-MM-YYYY',
+					}
+				});
+                
+                this.$dateOfAchievement.blur(function() {
+                    $(this).trigger('apply.daterangepicker', $(this).data('daterangepicker'));
+                });
+
+				this.$dateOfAchievement.on('apply.daterangepicker', function(ev, picker) {
+					$(this).val(picker.startDate.format('DD-MM-YYYY'));
+				});
+
+				this.$dateOfAchievement.on('cancel.daterangepicker', function(ev, picker) {
+					$(this).val('');
+				});
+            }
+        }
+        
+    }
+
+    Nebosh.VerificationsRequest.init();
+
+});

@@ -1,0 +1,173 @@
+a.print-now {
+  display: none;
+}
+#admin-bar {
+  display: none;
+  visibility: hidden;
+}
+#nav1 ul.n1 {
+  display: table-row;
+  font-size: 0.877em;
+}
+#nav1 ul.n1 li {
+  display: table-cell;
+  height: 115px;
+  position: relative;
+  vertical-align: middle;
+}
+#nav1 ul.n1 li a {
+  color: #616161;
+  display: block;
+  padding: 0 23px;
+  text-align: center;
+}
+#nav1 ul.n1 li ul.n2 {
+  display: none;
+}
+.home-template #primary {
+  display: block;
+  align-items: normal;
+  flex-wrap: nowrap;
+}
+.home-template #primary .items-news {
+  width: 100%;
+  left: 0;
+  padding: 0;
+}
+.home-template #primary .attached-content-blocks.attached-wrapper {
+  width: 100%;
+  right: 0;
+}
+#primary .items-qualifications .item,
+#primary .items-news .item,
+#primary .items-case-studies .item {
+  width: 50%;
+  float: left;
+  display: block;
+}
+#primary .items-qualifications .item:before,
+#primary .items-news .item:before,
+#primary .items-case-studies .item:before {
+  display: none;
+}
+#primary .items-qualifications .item.thumb-image .item-outer,
+#primary .items-news .item.thumb-image .item-outer,
+#primary .items-case-studies .item.thumb-image .item-outer,
+#primary .items-qualifications .item.default-image .item-outer,
+#primary .items-news .item.default-image .item-outer,
+#primary .items-case-studies .item.default-image .item-outer {
+  padding: 0 15px 0 150px;
+}
+#primary .items-qualifications .item.thumb-image .item-outer:before,
+#primary .items-news .item.thumb-image .item-outer:before,
+#primary .items-case-studies .item.thumb-image .item-outer:before,
+#primary .items-qualifications .item.default-image .item-outer:before,
+#primary .items-news .item.default-image .item-outer:before,
+#primary .items-case-studies .item.default-image .item-outer:before {
+  display: none;
+}
+#primary .items-qualifications .item.thumb-image .item-outer .item-inner,
+#primary .items-news .item.thumb-image .item-outer .item-inner,
+#primary .items-case-studies .item.thumb-image .item-outer .item-inner,
+#primary .items-qualifications .item.default-image .item-outer .item-inner,
+#primary .items-news .item.default-image .item-outer .item-inner,
+#primary .items-case-studies .item.default-image .item-outer .item-inner {
+  padding: 0 1px 1px;
+  position: relative;
+}
+#primary .items-qualifications .item.thumb-image .item-outer .item-inner *,
+#primary .items-news .item.thumb-image .item-outer .item-inner *,
+#primary .items-case-studies .item.thumb-image .item-outer .item-inner *,
+#primary .items-qualifications .item.default-image .item-outer .item-inner *,
+#primary .items-news .item.default-image .item-outer .item-inner *,
+#primary .items-case-studies .item.default-image .item-outer .item-inner * {
+  float: right;
+  width: 100%;
+}
+#primary .items-qualifications .item.thumb-image .item-outer .item-inner h3,
+#primary .items-news .item.thumb-image .item-outer .item-inner h3,
+#primary .items-case-studies .item.thumb-image .item-outer .item-inner h3,
+#primary .items-qualifications .item.default-image .item-outer .item-inner h3,
+#primary .items-news .item.default-image .item-outer .item-inner h3,
+#primary .items-case-studies .item.default-image .item-outer .item-inner h3 {
+  margin-top: 10px;
+}
+#primary .items-qualifications .item.thumb-image .item-outer .item-inner picture,
+#primary .items-news .item.thumb-image .item-outer .item-inner picture,
+#primary .items-case-studies .item.thumb-image .item-outer .item-inner picture,
+#primary .items-qualifications .item.default-image .item-outer .item-inner picture,
+#primary .items-news .item.default-image .item-outer .item-inner picture,
+#primary .items-case-studies .item.default-image .item-outer .item-inner picture {
+  position: relative;
+  float: left;
+  margin-left: -140px;
+  width: 130px;
+}
+#primary .items-faqs .btn {
+  font-weight: bold;
+}
+#primary .items-faqs .collapse {
+  display: block;
+}
+#page #nav2 > ul li a {
+  color: #000;
+}
+#page #tertiary {
+  display: none;
+}
+.two-columns #page > .outer,
+.one-column #page > .outer {
+  width: 100%;
+}
+.two-columns #page .has-banner-true:before,
+.one-column #page .has-banner-true:before,
+.two-columns #page .has-banner-true:after,
+.one-column #page .has-banner-true:after {
+  display: none;
+}
+.two-columns #page .has-banner-true h1:before,
+.one-column #page .has-banner-true h1:before,
+.two-columns #page .has-banner-true h1:after,
+.one-column #page .has-banner-true h1:after {
+  display: none;
+}
+.two-columns #page .has-banner-true h1 > span,
+.one-column #page .has-banner-true h1 > span {
+  padding-top: 0;
+}
+.two-columns #page .has-banner-true h1 > span span,
+.one-column #page .has-banner-true h1 > span span {
+  position: relative;
+  top: 0;
+  display: block;
+}
+.two-columns #page .main,
+.one-column #page .main {
+  width: 100%;
+  left: 0;
+}
+.two-columns #page .main #primary,
+.one-column #page .main #primary {
+  width: 100%;
+}
+.two-columns #page .main #secondary .items.related,
+.one-column #page .main #secondary .items.related {
+  display: none;
+  visibility: hidden;
+}
+.js #primary .tabs nav {
+  display: none;
+}
+.js #primary .tabs .tab-pane {
+  display: block;
+}
+.js #primary .tabs .tab-pane h3 {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: 20px 0 10px;
+}
+#footer-content > div.outer {
+  width: 100%;
+}
